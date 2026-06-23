@@ -35,6 +35,7 @@ spec:
         stage('Test') {
             steps {
                 container('shell') {
+                    sh 'chmod +x app/hello.sh'
                     sh './app/hello.sh'
                 }
             }
